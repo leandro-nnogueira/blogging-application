@@ -1,16 +1,12 @@
 package com.leandro.blogging_api.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
-@Setter
-@Getter
+@Data
 @Table(name = "posts")
 public class Post {
 
@@ -23,6 +19,4 @@ public class Post {
 
     @Column(name = "content")
     private String content;
-
-
 }
